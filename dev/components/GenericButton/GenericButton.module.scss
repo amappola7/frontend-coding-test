@@ -1,0 +1,21 @@
+@use '../../../styles/globals.module.scss';
+
+.genericButton {
+  min-width: 7rem;
+  height: 4.4rem;
+  border: none;
+  border-radius: 0.5rem;
+  @include globals.displayFlex(row, center, center);
+  font-family: globals.$enfasis-text;
+  font-size: 1.8rem;
+  color: #ffffff;
+  font-weight: 600;
+  background-color: globals.$primary-color;
+}
+
+.genericButton:hover {
+  color: globals.$primary-color;
+  background-color: #ffffff;
+  box-shadow: globals.$box-shadow;
+  transition: all 0.3s;
+}

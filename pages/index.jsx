@@ -1,4 +1,4 @@
-import NavBar from "../dev/components/NavBar/NavBar";
+import GenericButton from "../dev/components/GenericButton/GenericButton";
 import globalStyles from '../styles/globals.module.scss'
 
 function Index() {
@@ -19,7 +19,7 @@ function Index() {
         }
       `}
     </style>
-    <NavBar />
+  <GenericButton content='TEXT'/>
   </div>
   )
 }
