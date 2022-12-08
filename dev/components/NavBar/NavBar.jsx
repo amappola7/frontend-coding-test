@@ -3,7 +3,7 @@ import './NavBar.module.scss'
 
 function NavBar() {
   return (
-    <nav>
+    <nav className='root'>
       <picture>
         <source srcSet="/logo.png" type="image/png" />
         <img src="/logo.png" alt="Logo" />
