@@ -1,9 +1,26 @@
 import NavBar from "../dev/components/NavBar/NavBar";
-import styles from '../styles/globals.module.scss'
+import globalStyles from '../styles/globals.module.scss'
 
 function Index() {
   return (
-  <p className={styles.root}>PUTOS</p>
+  <div>
+    <style jsx global>
+      {`
+        html {
+          font-family: 'IBM Plex Sans', sans-serif;
+          font-size: 62.5%;
+          color: #202124;
+        }
+
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+      `}
+    </style>
+    <NavBar />
+  </div>
   )
 }
 

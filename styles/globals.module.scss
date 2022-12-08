@@ -2,11 +2,14 @@
 
 $general-text: 'IBM Plex Sans', sans-serif;
 $enfasis-text: 'Ubuntu', sans-serif;
+$primary-color: #DA1C95;
+$secondary-color: #202124;
+$gray-color: #AFAFAF;
+$box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.2);
 
-.root {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-size: 10px;
-  font-family: $general-text;
+@mixin displayFlex($flexDirection, $justifyContent, $alignItems) {
+  display: flex;
+  flex-direction: $flexDirection;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
 }
