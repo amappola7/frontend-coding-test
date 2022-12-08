@@ -19,7 +19,6 @@ function Index() {
         }
       `}
     </style>
-  <GenericTitle title='PROFILE' contentButton='ADD'/>
   </div>
   )
 }
