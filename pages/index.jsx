@@ -1,4 +1,4 @@
-import GenericForm from "../dev/components/GenericForm/GenericForm";
+import GenericTitle from "../dev/components/GenericTitle/GenericTitle";
 import globalStyles from '../styles/globals.module.scss'
 
 function Index() {
@@ -19,12 +19,7 @@ function Index() {
         }
       `}
     </style>
-  <GenericForm>
-    <label htmlFor="">
-      Hola
-      <input type="text" />
-    </label>
-  </GenericForm>
+  <GenericTitle title='PROFILE' contentButton='ADD'/>
   </div>
   )
 }

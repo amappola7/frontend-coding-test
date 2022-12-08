@@ -1,0 +1,16 @@
+@use '../../../styles/globals.module.scss';
+
+.genericTitle {
+  width: 100%;
+  @include globals.displayFlex(row, center, center);
+
+  span {
+    width: 85%;
+    @include globals.displayFlex(row, space-between, center);
+  }
+
+  h1 {
+    font-family: globals.$enfasis-text;
+    font-size: 3.5rem;
+  }
+}
