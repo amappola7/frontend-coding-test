@@ -1,0 +1,24 @@
+@use '../../../styles/globals.module.scss';
+
+.genericForm {
+  width: 100%;
+  @include globals.displayFlex(column, center, center);
+
+  label {
+    width: 85%;
+    @include globals.displayFlex(column, center, flex-start);
+    font-size: 2rem;
+    color: globals.$primary-color;
+    font-weight: 700;
+  }
+
+  input {
+    width: 100%;
+    min-height: 4.4rem;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    border: none;
+    box-shadow: globals.$box-shadow;
+    outline: none;
+  }
+}

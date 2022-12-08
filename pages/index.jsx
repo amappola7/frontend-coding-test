@@ -1,4 +1,4 @@
-import GenericBox from "../dev/components/GenericBox/GenericBox";
+import GenericForm from "../dev/components/GenericForm/GenericForm";
 import globalStyles from '../styles/globals.module.scss'
 
 function Index() {
@@ -19,9 +19,12 @@ function Index() {
         }
       `}
     </style>
-  <GenericBox>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae impedit perferendis, atque quidem consequatur rerum. Quos quia hic esse ea modi numquam ex dicta asperiores fuga, veritatis eaque quidem magni?</p>
-  </GenericBox>
+  <GenericForm>
+    <label htmlFor="">
+      Hola
+      <input type="text" />
+    </label>
+  </GenericForm>
   </div>
   )
 }
