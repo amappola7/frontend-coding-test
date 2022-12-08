@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Ubuntu:wght@400;500;700&display=swap');
+
+$general-text: 'IBM Plex Sans', sans-serif;
+$enfasis-text: 'Ubuntu', sans-serif;
+
+html {
+  font-size: 62.5%;
+  font-family: $general-text;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
