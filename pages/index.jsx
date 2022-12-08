@@ -1,4 +1,4 @@
-import GenericButton from "../dev/components/GenericButton/GenericButton";
+import GenericBox from "../dev/components/GenericBox/GenericBox";
 import globalStyles from '../styles/globals.module.scss'
 
 function Index() {
@@ -19,7 +19,9 @@ function Index() {
         }
       `}
     </style>
-  <GenericButton content='TEXT'/>
+  <GenericBox>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae impedit perferendis, atque quidem consequatur rerum. Quos quia hic esse ea modi numquam ex dicta asperiores fuga, veritatis eaque quidem magni?</p>
+  </GenericBox>
   </div>
   )
 }

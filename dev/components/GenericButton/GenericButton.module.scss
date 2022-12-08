@@ -4,7 +4,7 @@
   min-width: 7rem;
   height: 4.4rem;
   border: none;
-  border-radius: 0.5rem;
+  border-radius: globals.$border-radius;
   @include globals.displayFlex(row, center, center);
   font-family: globals.$enfasis-text;
   font-size: 1.8rem;

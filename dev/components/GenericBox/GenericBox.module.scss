@@ -1,0 +1,9 @@
+@use '../../../styles/globals.module.scss';
+
+.genericBox {
+  width: 85%;
+  padding: 2rem;
+  border-radius: globals.$border-radius;
+  background-color: #ffffff;
+  box-shadow: globals.$box-shadow;
+}
