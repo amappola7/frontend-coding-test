@@ -1,1 +1,61 @@
 @use '../../../styles/globals.module.scss';
+
+.taskCard {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  @include globals.displayFlex(row, center, flex-start);
+  gap: 2rem;
+
+  &__taskButtons {
+    width: fit-content;
+    height: 100%;
+    @include globals.displayFlex(column, space-between, space-between);
+  }
+
+  button {
+    width: fit-content;
+    height: fit-content;
+    border: none;
+    background-color: transparent;
+  }
+
+  &__completeTaskButton {
+    margin-bottom: 1.5rem;
+    font-size: 3.5rem;
+    color: globals.$primary-color;
+  }
+
+  &__editTaskButton {
+    // margin-top: 100%;
+    font-family: globals.$general-text;
+    font-size: 1.7rem;
+    color: globals.$gray-color;
+    font-weight: 600;
+    text-decoration: underline solid 0.12rem;
+  }
+
+  &__taskInfo {
+    width: 100%;
+    line-height: 1.85rem;
+
+  }
+
+  &__taskTitle {
+    font-size: 2.2rem;
+    font-weight: 700;
+  }
+
+  &__taskEndDate {
+    font-size: 1.8rem;
+    color: globals.$primary-color;
+    font-weight: 500;
+    font-style: italic;
+  }
+
+  &__taskDescription {
+    margin-top: 0.6rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+}
