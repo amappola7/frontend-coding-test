@@ -1,4 +1,4 @@
-import ProfileForm from "../dev/components/ProfileForm/ProfileForm";
+import TaskForm from "../dev/components/TaskForm/TaskForm";
 import globalStyles from '../styles/globals.module.scss'
 
 function Index() {
@@ -19,7 +19,7 @@ function Index() {
         }
       `}
     </style>
-    <ProfileForm />
+    <TaskForm />
   </div>
   )
 }

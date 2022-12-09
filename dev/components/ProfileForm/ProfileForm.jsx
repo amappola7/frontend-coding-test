@@ -13,7 +13,7 @@ function ProfileForm({handleValueChange, action}) {
   })
 
   return (
-    <GenericForm className={`${styles.profileForm}`}>
+    <GenericForm>
       <label>
         Full Name
         <input type="text" name='userFullName' value={valueProfileForm.userFullName} onChange={(ev) => {handleValueChange(ev, setValueProfileForm)}} placeholder='Stephen Hawking' required />
@@ -32,7 +32,7 @@ function ProfileForm({handleValueChange, action}) {
       </label>
       <label>
         Gender
-        <select name="userGender"  value={valueProfileForm.userGender} onChange={(ev) => {handleValueChange(ev, setValueProfileForm)}} id="">
+        <select name="userGender"  value={valueProfileForm.userGender} onChange={(ev) => {handleValueChange(ev, setValueProfileForm)}}>
           <option value="" selected>-- Gender --</option>
           <option value="female">Female</option>
           <option value="male">Male</option>
