@@ -1,4 +1,4 @@
-import GenericTitle from "../dev/components/GenericTitle/GenericTitle";
+import ProfileForm from "../dev/components/ProfileForm/ProfileForm";
 import globalStyles from '../styles/globals.module.scss'
 
 function Index() {
@@ -19,6 +19,7 @@ function Index() {
         }
       `}
     </style>
+    <ProfileForm />
   </div>
   )
 }

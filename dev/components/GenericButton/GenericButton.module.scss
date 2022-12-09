@@ -15,8 +15,5 @@
 }
 
 .genericButton:hover {
-  color: globals.$primary-color;
-  background-color: #ffffff;
-  box-shadow: globals.$box-shadow;
-  transition: all 0.3s;
+  @include globals.hoverButton();
 }

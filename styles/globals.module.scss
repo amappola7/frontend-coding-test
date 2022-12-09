@@ -14,3 +14,11 @@ $border-radius: 0.5rem;
   justify-content: $justifyContent;
   align-items: $alignItems;
 }
+
+@mixin hoverButton() {
+  color: $primary-color;
+  background-color: #ffffff;
+  box-shadow: $box-shadow;
+  transition: all 0.3s;
+}
+
