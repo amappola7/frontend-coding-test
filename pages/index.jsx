@@ -33,9 +33,6 @@ function Index() {
           }
         `}
       </style>
-        <GenericBox>
-          <TaskCard taskTitle='Title' taskEndDate='02-04-22' taskDescription='Lorem iasdjfasdflasdf lajsdfkjasd  lasdkfja asdjf ald a aslfia lkjfsfa.'></TaskCard>
-        </GenericBox>
     </div>
     </>
   )
