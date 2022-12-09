@@ -1,4 +1,5 @@
-import TaskForm from "../dev/components/TaskForm/TaskForm";
+import ProfileCard from "../dev/components/ProfileCard/ProfileCard";
+import GenericBox from "../dev/components/GenericBox/GenericBox";
 import globalStyles from '../styles/globals.module.scss'
 
 function Index() {
@@ -19,7 +20,9 @@ function Index() {
         }
       `}
     </style>
-    <TaskForm />
+      <GenericBox>
+        <ProfileCard userPicture='https://image.shutterstock.com/mosaic_250/2780032/1714666150/stock-photo-head-shot-portrait-close-up-smiling-confident-businessman-wearing-glasses-looking-at-camera-1714666150.jpg' userName='Harvey Specter' userOccupation='Lawyer' userAge='20'  />
+      </GenericBox>
   </div>
   )
 }

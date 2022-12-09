@@ -1,1 +1,104 @@
 @use '../../../styles/globals.module.scss';
+
+.profileCard {
+  width: 100%;
+  height: 100%;
+  @include globals.displayFlex(row, flex- start, center);
+  gap: 2rem;
+  font-size: 1.8rem;
+
+  &__userPictureContainer {
+    width: fit-content;
+    height: 100%;
+    @include globals.displayFlex(row, center, center);
+  }
+
+  &__userPicture {
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+  }
+
+  &__userContent {
+    width: 100%;
+    height: 100%;
+    @include globals.displayFlex(column, center, flex-start);
+  }
+
+  &__userInfo {
+    width: 100%;
+    line-height: 1.85rem;
+  }
+
+  &__userName {
+    font-size: 2.2rem;
+    font-weight: 700;
+  }
+
+  &__userOtherInfo {
+    font-size: 1.8rem;
+    color: globals.$primary-color;
+    font-weight: 500;
+    font-style: italic;
+  }
+
+  &__editProfileButton {
+    display: none;
+  }
+}
+
+.profileCardExtended {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  @include globals.displayFlex(row, flex- start, center);
+  gap: 2rem;
+  font-size: 1.8rem;
+
+  .profileCard__userPictureContainer {
+    width: fit-content;
+    height: 100%;
+    @include globals.displayFlex(row, center, center);
+  }
+
+  .profileCard__userPicture {
+    width: 10.5rem;
+    height: 10.5rem;
+    border-radius: 50%;
+  }
+
+  .profileCard__userContent {
+    width: 100%;
+    height: 100%;
+    @include globals.displayFlex(column, center, flex-start);
+  }
+
+  .profileCard__userInfo {
+    width: 100%;
+    line-height: 1.85rem;
+  }
+
+  .profileCard__userName {
+    font-size: 2.2rem;
+    font-weight: 700;
+  }
+
+  .profileCard__userOtherInfo {
+    font-size: 1.8rem;
+    color: globals.$primary-color;
+    font-weight: 500;
+    font-style: italic;
+  }
+
+  .profileCard__editProfileButton {
+    border: none;
+    margin-top: 1.2rem;
+    display: flex;
+    font-family: globals.$general-text;
+    font-size: 1.5rem;
+    color: globals.$gray-color;
+    font-weight: 600;
+    background-color: transparent;
+    text-decoration: underline solid 0.12rem;
+  }
+}
